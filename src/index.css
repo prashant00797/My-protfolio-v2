@@ -17,9 +17,6 @@
   --color-primary-button: #0f172a; /* dark button */
   --color-primary-foreground: #ffffff;
 
-  /* Subtle UI */
-  --color-muted: #f1f5f9; /* section background */
-
   /* Radius */
   --radius-card: 12px;
   --radius-button: 10px;
@@ -85,10 +82,6 @@
 @layer utilities {
   .custom-transition {
     @apply transition duration-200 ease-in-out hover:scale-105;
-  }
-
-  .background-gradient {
-    @apply bg-linear-to-b from-transparent via-blue-100/40 to-transparent;
   }
 
   .padding-margin {
