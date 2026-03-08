@@ -1,4 +1,5 @@
-import { GradientText } from "./utilities/GradientHover";
+import { GradientText } from "../utility/GradientHover";
+
 const buttons = [
   {
     name: "Github",
