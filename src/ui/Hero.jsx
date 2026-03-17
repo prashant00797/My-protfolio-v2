@@ -2,10 +2,12 @@ const buttons = [
   {
     name: "Github",
     link: "https://github.com/prashant00797",
+    download: false,
   },
   {
     name: "Resume",
-    link: "https://drive.google.com/drive/folders/1O2puCpnaOkCawyO4KBYXNiCtsydeNnYS?usp=sharing",
+    link: "/resume.pdf",
+    download: true,
   },
 ];
 const Hero = () => {
@@ -24,7 +26,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center gap-10">
         {buttons.map((ele, idx) => (
-          <a key={idx} href={ele.link} target="_blank">
+          <a key={idx} href={ele.link} download={ele.download} target="_blank">
             <button className="button w-20 h-10 md:min-w-30 ">
               {ele.name}
             </button>
